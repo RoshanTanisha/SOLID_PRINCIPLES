@@ -6,6 +6,7 @@ class StandardMessages:
 
 	@staticmethod
 	def end_application():
+		print('Press enter to close...')
 		_ = input()
 
 	@staticmethod
