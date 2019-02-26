@@ -1,7 +1,6 @@
-from OCP.Accounts import Accounts
-from OCP.ExecutiveModel import ExecutiveModel
-from OCP.PersonModel import PersonModel
-from OCP.ManagerModel import ManagerModel
+from OCP.Applicants.ExecutiveModel import ExecutiveModel
+from OCP.Applicants.PersonModel import PersonModel
+from OCP.Applicants.ManagerModel import ManagerModel
 
 
 if __name__ == '__main__':
@@ -9,6 +8,7 @@ if __name__ == '__main__':
 	person1 = PersonModel()
 	person2 = ManagerModel()
 	person3 = ExecutiveModel()
+	person4 = ManagerModel()
 
 	person1.first_name = 'Harry'
 	person1.last_name = 'Potter'
@@ -19,11 +19,12 @@ if __name__ == '__main__':
 	person3.first_name = 'Ron'
 	person3.last_name = 'Weisley'
 
-	applicants = [person1, person2, person3]
+	person4.first_name = 'Ron'
+	person4.last_name = 'Weisley'
+
+	applicants = [person1, person2, person3, person4]
 
 	employees = list()
-
-	accounts_processor = Accounts()
 
 	for person in applicants:
 		try:

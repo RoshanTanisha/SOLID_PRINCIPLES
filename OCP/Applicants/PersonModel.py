@@ -1,5 +1,5 @@
-from OCP.IApplicantModel import IApplicantModel
-from OCP.Accounts import Accounts
+from OCP.Applicants.IApplicantModel import IApplicantModel
+from OCP.Accounts.Accounts import Accounts
 
 
 class PersonModel(IApplicantModel):

@@ -1,6 +1,6 @@
-from OCP.EmployeeModel import EmployeeModel
-from OCP.IAccounts import IAccounts
-from OCP.IApplicantModel import IApplicantModel
+from OCP.Applicants.EmployeeModel import EmployeeModel
+from OCP.Accounts.IAccounts import IAccounts
+from OCP.Applicants.IApplicantModel import IApplicantModel
 
 
 class ManagerAccounts(IAccounts):

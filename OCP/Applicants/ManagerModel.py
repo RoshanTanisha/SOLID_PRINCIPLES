@@ -1,11 +1,10 @@
-from OCP.ExecutiveAccounts import ExecutiveAccounts
-from OCP.IApplicantModel import IApplicantModel
+from OCP.Accounts.ManagerAccounts import ManagerAccounts
+from OCP.Applicants.IApplicantModel import IApplicantModel
 
-
-class ExecutiveModel(IApplicantModel):
+class ManagerModel(IApplicantModel):
 
 	def __init__(self):
-		self.accounts = ExecutiveAccounts()
+		self.accounts = ManagerAccounts()
 
 	@property
 	def first_name(self) -> str:

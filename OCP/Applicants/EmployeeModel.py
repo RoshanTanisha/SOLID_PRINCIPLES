@@ -1,4 +1,4 @@
-from OCP.IApplicantModel import IApplicantModel
+from OCP.Applicants.IApplicantModel import IApplicantModel
 
 
 class EmployeeModel(IApplicantModel):
